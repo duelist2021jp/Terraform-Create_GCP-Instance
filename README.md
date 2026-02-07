@@ -39,11 +39,11 @@ https://docs.cloud.google.com/compute/docs/connect/create-ssh-keys?hl=ja
 
 ## 使用方法
 コードが存在するディレクトリに移動し、以下のコマンドを順次実行。
-
+```
 terraform init
 terraform plan
 terraform apply
-
+```
 コードの実行が完了すると、Compute EngineのパブリックIPとプライベートIPが表示されます。
 ローカルからSSH接続する際には、パブリックIPを指定の上、ログオンください。
      
