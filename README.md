@@ -34,4 +34,16 @@ Windows11 Homeエディション 25H2
 ※詳細については、下記ドキュメントを参照
 
 https://docs.cloud.google.com/compute/docs/connect/create-ssh-keys?hl=ja
+
+* Compute Engineは起動時に、initial.shシェルスクリプトに記載のコマンドを実行。(Google Cloudではメタデータスクリプトと呼ばれます。AWSのEC2におけるユーザーデータと同じです。)
+
+## 使用方法
+コードが存在するディレクトリに移動し、以下のコマンドを順次実行。
+
+terraform init
+terraform plan
+terraform apply
+
+コードの実行が完了すると、Compute EngineのパブリックIPとプライベートIPが表示されます。
+ローカルからSSH接続する際には、パブリックIPを指定の上、ログオンください。
      
